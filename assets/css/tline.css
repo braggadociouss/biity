@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: url("/assets/cursors/Normal_Select.cur"), auto;
+    background: linear-gradient(135deg, #6bafff, #94d7f7); 
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+    text-align: center;
+}
+
+.post-image{
+   max-width: 600px !important;
+   border-radius: 5px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content !important;
+    max-width: 1000px !important;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.post-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.post-stats {
+    margin-top: 10px;
+}
+
+.post-stats a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+     .post-image { 
+        max-width: 200px !important; 
+    }
+}

@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #333;
+}
+button{
+  margin: 20px !important;
+}
+.bigimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; 
+    clip-path: circle(50%)
+}
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container label {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.container input[type="file"] {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #6bafff;
+    color: #fff;
+    font-family: "Pixelify Sans", sans-serif;
+
+}
+
+.container button:hover {
+    background-color: #5596e6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .container h2 {
+        font-size: 1.8rem;
+    }
+    .container label {
+        font-size: 1rem;
+    }
+    .container button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

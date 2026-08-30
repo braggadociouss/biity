@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f7fb;
+    color: #2b3040;
+    line-height: 1.6;
+}
+
+.wrapper-hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #5d9df5 0%, #74baf5 50%, #8bd3f5 100%); 
+    text-align: center;
+}
+
+.title-wrapper {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Tiny5', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 3px 3px #2b3040;
+}
+
+.middleman-3dot {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.calltoaction-hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-ctah-wrp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #5d9df5;
+    border: 2px solid #5d9df5;
+}
+
+.cta-button:hover {
+    background-color: #5d9df5;
+    color: #fff;
+}
+
+.mdl-or {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.body-main-home {
+    padding: 20px;
+    background-color: #fff;
+    color: #2b3040;
+    text-align: center;
+}
+
+.friends, .posts {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.friends > div, .posts > div {
+    background-color: #5d9df5;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(43, 48, 64, 0.12);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.friends > div:hover, .posts > div:hover {
+    transform: scale(1.05);
+}

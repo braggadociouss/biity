@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    background: linear-gradient(135deg, #6bafff, #94d7f7); 
+    color: #333;
+}
+
+.post-container {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-container h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.post-container p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 10px;
+    line-height: 1.5; 
+}
+
+.post-container img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 100%; 
+    height: auto;
+}
+.post-container video {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 100%; 
+    height: auto;
+}
+.user-profile-pic {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.post-container form {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.post-container button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 5px;  
+}
+         
+@media (max-width: 768px) {
+    .post-container {
+        padding: 10px;
+        width: 300px;
+    }
+    .post-container h2 {
+        font-size: 1.6rem;
+    }
+    .post-container p {
+        font-size: 0.9rem;
+    }
+    .post-container button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+}
+
+.likes-container {
+    display: flex;
+    align-items: center;
+}
+
+.likes-container span {
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.likei {
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.user-profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.comments-section {
+    margin-top: 30px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-start; 
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+.comment-profile-pic {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    object-fit: cover !important; 
+    clip-path: circle(50%);
+    margin: 5px;
+    display: block;
+}
+form > button {
+    font-size: 1.2rem !important;
+    background-color: #787a7a31;
+    color: black;
+
+}
+.comment-content {
+    flex: 1; 
+}
+
+.comment p {
+    margin-bottom: 5px; 
+}
+
+.comment small {
+    color: #999; 
+}
+
+form textarea {
+   width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #6bafff; 
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+

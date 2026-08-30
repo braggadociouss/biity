@@ -1,0 +1,208 @@
+/* include in all documents to maintain basic styling */ 
+html,body{
+    cursor: url("/assets/cursors/Normal_Select.cur"), auto;
+}
+.buttonlabel{
+    color: white !important;
+}
+body {
+/* makes the gradient cover the whole screen and just looks better */
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient( 135deg,   #5d9df5 0%, #74baf5 50%,  #8bd3f5 100% );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input[type="file"]{
+ display: none;
+}
+input[type="file"]::after{
+ content: "Test";
+display: block;
+}
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+input[type='submit']{
+    margin-top: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+input[type="submit"] {
+    padding: 5px 10px; 
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background-color: #6bafff; 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #4d9aff; 
+}
+img{
+    object-fit: cover;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: linear-gradient(to left,  #6bafff, #94d7f7); 
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 20px;
+    cursor: url("/assets/cursors/Normal_Select.cur"), auto;
+
+}
+
+.navbar-logo img {
+    margin-right: 30px; 
+    height: 80px; 
+    transition: transform 0.3s;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.2);
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px; 
+}
+
+.navbtn {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 8px 16px; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-size: 0.9rem;
+    flex: 1; 
+}
+
+.navbtn:hover {
+    background-color: #add8e6; 
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+
+}
+
+.welcome-msg {
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px; 
+    display: none; 
+}
+.profile-pic {
+    height: 40px; 
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: url("/assets/cursors/Link_Select.cur"),auto;
+    margin-right: 50px; 
+}
+button {
+    font-family: "Pixelify Sans" !important;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+min-width: 80px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px; 
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+.pfp{
+       border-radius: 50%;
+object-fit: cover; 
+clip-path: circle(50%)
+}
+.bigimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+object-fit: cover; 
+clip-path: circle(50%)
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-logo img {
+        height: 70px; 
+    }
+
+    .navbar-links {
+        gap: 5px; 
+    }
+
+    .navbtn {
+        padding: 6px 12px; 
+    }
+
+    .profile-pic {
+        height: 30px; 
+        width: 30px;
+    }
+
+    .welcome-msg {
+        display: none; 
+    }
+    .navbar{
+        width: 90%;
+        margin-top: 5px;
+    }
+}
+a:hover, button:hover, .buttonlabel:hover, button img:hover, input[type="button"]:hover, input[type="submit"]:hover, .clickable:hover {
+    cursor: url("/assets/cursors/Link_Select.cur"), auto;
+}
+textarea{
+    font-family: "Pixelify Sans";
+}
